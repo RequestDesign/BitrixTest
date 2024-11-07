@@ -1,0 +1,56 @@
+.categories {
+	margin: 0 0 170px;
+
+	@include vp-767 {
+		margin: 0 0 90px;
+	}
+
+	&__title {
+		margin: 0 0 54px;
+		font-weight: 500;
+		font-size: 60px;
+		line-height: 76.08px;
+		color: $color-white;
+		text-transform: uppercase;
+		text-align: center;
+
+		@include vp-767 {
+			display: flex;
+			margin: 0 auto 35px 0;
+			font-size: 23px;
+			line-height: 29px;
+		}
+	}
+
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 30px;
+
+		@include vp-767 {
+			flex-wrap: nowrap;
+			overflow: auto;
+			margin: 0 -14px;
+			padding: 0 14px;
+			gap: 10px;
+		}
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
+
+	&__item {
+		width: calc(25% - 90px / 4);
+		min-width: 400px;
+
+		@include vp-767 {
+			min-width: 238px;
+			width: 238px;
+		}
+	}
+}

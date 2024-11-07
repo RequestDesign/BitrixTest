@@ -1,0 +1,45 @@
+.custom-input {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+  position: relative;
+
+	&__field {
+    border: none;
+    border-bottom: 2px solid $color-mindaro;
+    background-color: transparent;
+    font-family: $ff-main;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: $color-white;
+    padding: 5px 0;
+    outline: none;
+
+    &::placeholder {
+      opacity: 0;
+    }
+
+    &:focus-visible,
+    &:not(:placeholder-shown) {
+      ~ .custom-input__label {
+        transform: translateY(-55px) scale(0.8);
+        color: $color-mindaro;
+      }
+    }
+	}
+
+	&__label {
+    font-size: 16px;
+    line-height: 19px;
+    color: $color-white;
+    text-transform: uppercase;
+    transform: translateY(-35px);
+    transform-origin: top left;
+    transition: transform $transition-300, color $transition-300;
+
+    .contacts-card__form & {
+      transform: translateY(-30px);
+    }
+	}
+}

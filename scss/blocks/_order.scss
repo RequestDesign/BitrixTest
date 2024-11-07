@@ -1,0 +1,126 @@
+.order {
+	padding: 180px 0 0;
+	display: grid;
+
+	&__process,
+	&__success {
+		grid-column: 1;
+		grid-row: 1;
+		opacity: 0;
+		pointer-events: none;
+		transition: opacity $transition-300, transform $transition-300;
+
+		&--open {
+			opacity: 1;
+			pointer-events: all;
+			transform: translateY(0);
+		}
+	}
+
+	&__process {
+		padding: 14px 0 0;
+	}
+
+	&__success {
+		transition-delay: 0.3s;
+	}
+
+
+
+	&__wrapper {
+		display: grid;
+		align-items: center;
+		gap: 298px;
+		grid-template-columns: 1fr 619px;
+	}
+
+	&__title {
+		margin: 0 0 75px;
+		font-weight: 500;
+		font-size: 60px;
+		line-height: 76px;
+		text-transform: uppercase;
+		color: $color-white;
+	}
+
+	&__form {
+		padding: 0 0 20px;
+
+		.user-form {
+			gap: 40px;
+
+			&__inner {
+				gap: 38px;
+			}
+
+			&__btn--secondary {
+				margin: 0;
+			}
+		}
+
+		.custom-input__label {
+			transform: translateY(-30px);
+		}
+	}
+
+	&__info.modal {
+		position: relative;
+		inset: unset;
+		opacity: 1;
+		pointer-events: all;
+		z-index: unset;
+	}
+
+	&__info {
+		.modal {
+			&__shopping-cart {
+				display: flex;
+				gap: 57px;
+				padding: 48px 48px 42px 48px;
+			}
+
+			&__title {
+				font-size: 15px;
+				line-height: 19px;
+			}
+
+			&__footer {
+				margin: 6px 0 0;
+			}
+
+			&__btn-purchase {
+				margin: 0 4px 0 0;
+				width: 237px;
+				height: 122px;
+				align-items: flex-start;
+				gap: 6px;
+				transform: unset;
+				cursor: default;
+
+				&::before {
+					width: 241px;
+					height: 111px;
+					transform: rotate(-13deg);
+				}
+
+				&-count {
+					font-family: $ff-floreste;
+					font-weight: 400;
+					font-size: 40px;
+					line-height: 52px;
+					letter-spacing: 0.04em;
+				}
+
+				&-currency {
+					font-family: $ff-main;
+					font-size: 20px;
+					line-height: 24px;
+				}
+			}
+
+			&-card__line {
+				margin: 14px 0 24px;
+			}
+		}
+	}
+}

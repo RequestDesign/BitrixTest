@@ -1,0 +1,34 @@
+.socials {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+	&__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $color-white;
+    outline: none;
+    transition: background-color $transition-300;
+
+    &:not(:disabled):hover,
+    &:focus-visible {
+        background-color: $color-pale-magneta;
+
+        .socials__icon {
+          color: $color-white;
+        }
+      }
+	}
+
+	&__icon {
+    color: $color-biloba-flower;
+    transition: color $transition-300;
+	}
+}

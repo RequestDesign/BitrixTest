@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Elfen lied</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__left">
+      <a class="header__logo" href="index.html">Elfen lied</a>
+      <a class="header__link" id="catalog" href="#">
+        <svg class="header__link-icon" width="15" height="15" aria-hidden="true">
+          <use xlink:href="images/sprite.svg#icon-dots"></use>
+        </svg>
+        Каталог
+      </a>
+    </div>
+    <div class="header__center">
+      <a class="header__link" href="#">Блог</a>
+      <button class="header__link" type="button" data-modal-target="#contacts-modal" id="contacts-btn">Контакты</button>
+    </div>
+    <div class="header__right">
+      <button class="header__link" type="button" data-modal-target="#search-modal">
+        <svg class="header__link-icon" width="26" height="26" aria-hidden="true">
+          <use xlink:href="images/sprite.svg#icon-search"></use>
+        </svg>
+        Поиск
+      </button>
+      <ul class="header__user">
+        <li class="header__user-item">
+          <button class="header__user-btn" type="button" data-modal-target="#favourites-modal">
+            <svg class="header__user-icon" width="22" height="20" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-like"></use>
+            </svg>
+          </button>
+        </li>
+        <li class="header__user-item">
+          <button class="header__user-btn" type="button" data-modal-target="#user-modal">
+            <svg class="header__user-icon" width="18" height="21" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-person"></use>
+            </svg>
+          </button>
+        </li>
+        <li class="header__user-item">
+          <button class="header__user-btn" type="button" disabled>
+            <svg class="header__user-icon" width="21" height="22" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-shopping-cart"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section class="order">
+      <div class="order__process order__process--open">
+        <div class="container">
+          <div class="order__wrapper">
+            <div class="order__form">
+              <h1 class="order__title">Оформление заказа</h1>
+              <form class="user-form" action="#" method="POST">
+                <div class="user-form__inner">
+                  <div class="custom-input">
+                    <input class="custom-input__field" type="text" name="user-name" id="user-name" placeholder="">
+                    <label class="custom-input__label" for="user-name">Ваше Имя</label>
+                  </div>
+                  <div class="custom-input">
+                    <input class="custom-input__field" type="text" name="user-address" id="user-address" placeholder="">
+                    <label class="custom-input__label" for="user-address">Адрес</label>
+                  </div>
+                  <div class="custom-input">
+                    <input class="custom-input__field" type="tel" name="user-tel" id="user-tel" placeholder="">
+                    <label class="custom-input__label" for="user-tel">Телефон</label>
+                  </div>
+                </div>
+                <button class="user-form__btn user-form__btn--secondary btn" type="submit" id="ordering">Заказать</button>
+              </form>
+            </div>
+            <div class="order__info modal">
+              <div class="modal__shopping-cart">
+                <span class="modal__title">Состав заказа</span>
+                <ul class="modal__list">
+                  <li class="modal__item">
+                    <div class="modal-card modal-card--copelia">
+                      <a class="modal-card__link" href="#"></a>
+                      <img class="modal-card__img" src="images/modal-card/img-lamp-copelia.png" alt="Лампа настольная"
+                      width="164" height="260">
+                      <div class="modal-card__wrapper">
+                        <div class="modal-card__top">
+                          <div class="modal-card__main-info">
+                            <span class="modal-card__color"></span>
+                            <span class="modal-card__name">coppelia</span>
+                            <span class="modal-card__category">Лампа настольная</span>
+                          </div>
+                          <button class="modal-card__btn-delete" type="button">
+                            <svg class="modal-card__btn-delete-icon" width="29" height="29" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#icon-trash"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <span class="modal-card__line"></span>
+                        <div class="modal-card__bottom">
+                          <span class="modal-card__price">150 000
+                            <span class="modal-card__price-currency">₽</span>
+                          </span>
+                          <span class="modal-card__sum">x1</span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="modal__item">
+                    <div class="modal-card modal-card--aubrey">
+                      <a class="modal-card__link" href="#"></a>
+                      <img class="modal-card__img" src="images/modal-card/img-lamp-aubrey.png" alt="Лампа настольная"
+                width="160" height="260">
+                      <div class="modal-card__wrapper">
+                        <div class="modal-card__top">
+                          <div class="modal-card__main-info">
+                            <span class="modal-card__color"></span>
+                            <span class="modal-card__name">Facchetta</span>
+                            <span class="modal-card__category">Лампа настольная</span>
+                          </div>
+                          <button class="modal-card__btn-delete" type="button">
+                            <svg class="modal-card__btn-delete-icon" width="29" height="29" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#icon-trash"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <span class="modal-card__line"></span>
+                        <div class="modal-card__bottom">
+                          <span class="modal-card__price">150 000
+                            <span class="modal-card__price-currency">₽</span>
+                          </span>
+                          <span class="modal-card__sum">x1</span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="modal__item">
+                    <div class="modal-card modal-card--darrell">
+                      <a class="modal-card__link" href="#"></a>
+                      <img class="modal-card__img" src="images/modal-card/img-lamp-darrell.png" alt="Лампа настольная"
+                width="184" height="260">
+                      <div class="modal-card__wrapper">
+                        <div class="modal-card__top">
+                          <div class="modal-card__main-info">
+                            <span class="modal-card__color"></span>
+                            <span class="modal-card__name">coppelia</span>
+                            <span class="modal-card__category">Лампа настольная</span>
+                          </div>
+                          <button class="modal-card__btn-delete" type="button">
+                            <svg class="modal-card__btn-delete-icon" width="29" height="29" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#icon-trash"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <span class="modal-card__line"></span>
+                        <div class="modal-card__bottom">
+                          <span class="modal-card__price">150 000
+                            <span class="modal-card__price-currency">₽</span>
+                          </span>
+                          <span class="modal-card__sum">x1</span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="modal__footer">
+                  <div class="modal__sum">
+                    <span class="modal__sum-text">итого:</span>
+                  </div>
+                  <span class="modal__btn-purchase btn">
+                    <span class="modal__btn-purchase-count">450 000
+                    </span>
+                    <span class="modal__btn-purchase-currency">₽</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="order__success success-page">
+        <div class="container">
+          <div class="success-page__wrapper">
+            <span class="success-page__text">ваш Заказ оформлен</span>
+            <img class="success-page__main-img" src="images/product/img-product-lamp.png" alt="Santa Trinita"
+              width="637" height="917">
+            <span class="success-page__text success-page__text--align-right">Спасибо за заказ</span>
+          </div>
+        </div>
+        <div class="success-page__images">
+          <img class="success-page__img success-page__img--darell" src="images/modal-card/img-lamp-darrell.png" alt="Лампа" width="184" height="260">
+          <img class="success-page__img success-page__img--aubrey" src="images/modal-card/img-lamp-aubrey.png" alt="Лампа" width="160" height="260">
+          <img class="success-page__img success-page__img--copelia" src="images/modal-card/img-lamp-copelia.png" alt="Лампа" width="164" height="260">
+          <img class="success-page__img success-page__img--leslie" src="images/modal-card/img-lamp-leslie.png" alt="Лампа" width="173" height="260">
+        </div>
+        <span class="success-page__bg-text">
+          <span class="success-page__bg-text-el">thank you</span>
+          <span class="success-page__bg-text-el">thank you</span>
+          <span class="success-page__bg-text-el">thank you</span>
+        </span>
+      </div>
+    </section>
+    <div class="modal" id="modal">
+      <div class="modal__contacts" id="contacts-modal">
+        <div class="contacts-card">
+          <button class="modal__btn-close" type="button">
+            <svg class="modal__btn-close-icon" width="20" height="20" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="contacts-card__info">
+            <div class="contacts-card__inner">
+              <span class="contacts-card__label">Адрес</span>
+              <div class="contacts-card__address">
+                <span class="contacts-card__city">Москва</span>
+                <span class="contacts-card__text">Хохловский переулок&nbsp;д.&nbsp;11, стр.&nbsp;3</span>
+              </div>
+              <span class="contacts-card__caption">Адрес на карте
+                <svg class="contacts-card__caption-icon" width="16" height="24" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-arrow-secondary"></use>
+                </svg>
+              </span>
+            </div>
+            <div class="contacts-card__inner">
+              <span class="contacts-card__label">Телефон</span>
+              <div class="contacts-card__call-us">
+                <a class="contacts-card__tel" href="tel:+74956212617">+7 (495) 621-26-17</a>
+                <div class="contacts-card__text">Ответим на все вопросы</div>
+              </div>
+              <ul class="contacts-card__socials socials">
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon" width="20" height="21" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-tg"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon" width="16" height="13" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon" width="18" height="19" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon" width="10" height="18" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-fb"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="contacts-card__form">
+            <span class="contacts-card__label">Форма обратной связи</span>
+            <form class="user-form" action="#" method="POST">
+              <div class="user-form__inner">
+                <div class="custom-input">
+                  <input class="custom-input__field" type="email" name="user-mail-feedback" id="user-mail-feedback"
+                    placeholder="">
+                  <label class="custom-input__label" for="user-mail-feedback">E-mail</label>
+                </div>
+                <div class="custom-input">
+                  <input class="custom-input__field" type="text" name="user-text-feedback" id="user-text-feedback"
+                    placeholder="">
+                  <label class="custom-input__label" for="user-text-feedback">Сообщение</label>
+                </div>
+              </div>
+              <button class="user-form__btn user-form__btn--secondary btn" type="submit">Отправить</button>
+            </form>
+          </div>
+          <div class="contacts-card__map">
+            <img class="contacts-card__img" src="images/contacts/img-map.jpg" alt="Карта" width="1800" height="537">
+            <svg class="contacts-card__loc-icon" width="70" height="96" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-loc"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="modal__favourites" id="favourites-modal">
+        <button class="modal__btn-close" type="button">
+          <svg class="modal__btn-close-icon" width="20" height="20" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <span class="modal__title">товары в избранном</span>
+        <ul class="modal__list">
+          <li class="modal__item">
+            <div class="modal-card modal-card--copelia">
+              <a class="modal-card__link" href="#"></a>
+              <img class="modal-card__img" src="images/modal-card/img-lamp-copelia.png" alt="Лампа настольная"
+                width="164" height="260">
+              <div class="modal-card__wrapper">
+                <div class="modal-card__top">
+                  <div class="modal-card__main-info">
+                    <span class="modal-card__color"></span>
+                    <span class="modal-card__name">coppelia</span>
+                    <span class="modal-card__category">Лампа настольная</span>
+                  </div>
+                  <button class="modal-card__btn-like btn btn--alt" type="button">
+                    <svg class="btn__icon" width="34" height="31" viewBox="0 0 34 31" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path class="btn__icon-fill"
+                        d="M30.5325 3.4754C29.7506 2.69063 28.8222 2.06809 27.8004 1.64335C26.7786 1.21861 25.6834 1 24.5774 1C23.4714 1 22.3762 1.21861 21.3544 1.64335C20.3326 2.06809 19.4042 2.69063 18.6223 3.4754L16.9996 5.10333L15.3769 3.4754C13.7975 1.89096 11.6554 1.00082 9.42177 1.00082C7.18818 1.00082 5.04607 1.89096 3.46668 3.4754C1.88729 5.05985 1 7.20882 1 9.44957C1 11.6903 1.88729 13.8393 3.46668 15.4237L5.0894 17.0517L16.9996 29L28.9098 17.0517L30.5325 15.4237C31.3148 14.6393 31.9353 13.708 32.3587 12.6829C32.7821 11.6579 33 10.5591 33 9.44957C33 8.33999 32.7821 7.24129 32.3587 6.21622C31.9353 5.19115 31.3148 4.25981 30.5325 3.4754Z"
+                        fill="currentColor" />
+                      <path class="btn__icon-stroke"
+                        d="M30.5325 3.4754L29.8241 4.18121L29.8244 4.18154L30.5325 3.4754ZM24.5774 1V2V1ZM18.6223 3.4754L19.3306 4.18138L19.3307 4.18121L18.6223 3.4754ZM16.9996 5.10333L16.2914 5.8093L16.9996 6.51981L17.7078 5.8093L16.9996 5.10333ZM15.3769 3.4754L14.6686 4.18138V4.18138L15.3769 3.4754ZM3.46668 15.4237L4.17492 14.7178H4.17492L3.46668 15.4237ZM5.0894 17.0517L4.38117 17.7576L4.38117 17.7576L5.0894 17.0517ZM16.9996 29L16.2914 29.706L16.9996 30.4165L17.7078 29.706L16.9996 29ZM28.9098 17.0517L29.618 17.7576V17.7576L28.9098 17.0517ZM30.5325 15.4237L29.8244 14.7176L29.8243 14.7178L30.5325 15.4237ZM31.2409 2.76959C30.3663 1.89176 29.3277 1.19523 28.1843 0.719951L27.4166 2.56675C28.3168 2.94095 29.1349 3.4895 29.8241 4.18121L31.2409 2.76959ZM28.1843 0.719951C27.0409 0.24467 25.8153 0 24.5774 0V2C25.5516 2 26.5164 2.19256 27.4166 2.56675L28.1843 0.719951ZM24.5774 0C23.3396 0 22.1139 0.244669 20.9705 0.719951L21.7382 2.56675C22.6384 2.19256 23.6032 2 24.5774 2V0ZM20.9705 0.719951C19.8272 1.19523 18.7885 1.89176 17.9139 2.76959L19.3307 4.18121C20.0199 3.4895 20.838 2.94095 21.7382 2.56675L20.9705 0.719951ZM17.9141 2.76943L16.2914 4.39735L17.7078 5.8093L19.3306 4.18138L17.9141 2.76943ZM17.7078 4.39735L16.0851 2.76943L14.6686 4.18138L16.2914 5.8093L17.7078 4.39735ZM16.0851 2.76943C14.3184 0.997092 11.9216 0.000821292 9.42177 0.000821292V2.00082C11.3891 2.00082 13.2765 2.78482 14.6686 4.18138L16.0851 2.76943ZM9.42177 0.000821292C6.92193 0.000821292 4.52512 0.997092 2.75844 2.76943L4.17492 4.18138C5.56702 2.78482 7.45443 2.00082 9.42177 2.00082V0.000821292ZM2.75844 2.76943C0.991874 4.54166 0 6.94464 0 9.44957H2C2 7.47301 2.78271 5.57805 4.17492 4.18138L2.75844 2.76943ZM0 9.44957C0 11.9545 0.991874 14.3575 2.75844 16.1297L4.17492 14.7178C2.78271 13.3211 2 11.4261 2 9.44957H0ZM2.75844 16.1297L4.38117 17.7576L5.79764 16.3457L4.17492 14.7178L2.75844 16.1297ZM4.38117 17.7576L16.2914 29.706L17.7078 28.294L5.79764 16.3457L4.38117 17.7576ZM17.7078 29.706L29.618 17.7576L28.2015 16.3457L16.2914 28.294L17.7078 29.706ZM29.618 17.7576L31.2407 16.1297L29.8243 14.7178L28.2015 16.3457L29.618 17.7576ZM31.2406 16.1299C32.1156 15.2525 32.8096 14.2109 33.283 13.0647L31.4344 12.3012C31.0611 13.2051 30.5139 14.0262 29.8244 14.7176L31.2406 16.1299ZM33.283 13.0647C33.7564 11.9185 34 10.6901 34 9.44957H32C32 10.4282 31.8078 11.3972 31.4344 12.3012L33.283 13.0647ZM34 9.44957C34 8.20907 33.7564 6.98066 33.283 5.83447L31.4344 6.59797C31.8078 7.50191 32 8.47091 32 9.44957H34ZM33.283 5.83447C32.8096 4.68828 32.1156 3.64668 31.2406 2.76926L29.8244 4.18154C30.5139 4.87294 31.0611 5.69402 31.4344 6.59797L33.283 5.83447Z"
+                        fill="currentColor" />
+                    </svg>
+                  </button>
+                </div>
+                <span class="modal-card__line"></span>
+                <div class="modal-card__bottom">
+                  <span class="modal-card__price">150 000
+                    <span class="modal-card__price-currency">₽</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="modal__item">
+            <div class="modal-card modal-card--aubrey">
+              <a class="modal-card__link" href="#"></a>
+              <img class="modal-card__img" src="images/modal-card/img-lamp-aubrey.png" alt="Лампа настольная"
+                width="160" height="260">
+              <div class="modal-card__wrapper">
+                <div class="modal-card__top">
+                  <div class="modal-card__main-info">
+                    <span class="modal-card__color"></span>
+                    <span class="modal-card__name">Facchetta</span>
+                    <span class="modal-card__category">Лампа настольная</span>
+                  </div>
+                  <button class="modal-card__btn-like btn btn--alt" type="button">
+                    <svg class="btn__icon" width="34" height="31" viewBox="0 0 34 31" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path class="btn__icon-fill"
+                        d="M30.5325 3.4754C29.7506 2.69063 28.8222 2.06809 27.8004 1.64335C26.7786 1.21861 25.6834 1 24.5774 1C23.4714 1 22.3762 1.21861 21.3544 1.64335C20.3326 2.06809 19.4042 2.69063 18.6223 3.4754L16.9996 5.10333L15.3769 3.4754C13.7975 1.89096 11.6554 1.00082 9.42177 1.00082C7.18818 1.00082 5.04607 1.89096 3.46668 3.4754C1.88729 5.05985 1 7.20882 1 9.44957C1 11.6903 1.88729 13.8393 3.46668 15.4237L5.0894 17.0517L16.9996 29L28.9098 17.0517L30.5325 15.4237C31.3148 14.6393 31.9353 13.708 32.3587 12.6829C32.7821 11.6579 33 10.5591 33 9.44957C33 8.33999 32.7821 7.24129 32.3587 6.21622C31.9353 5.19115 31.3148 4.25981 30.5325 3.4754Z"
+                        fill="currentColor" />
+                      <path class="btn__icon-stroke"
+                        d="M30.5325 3.4754L29.8241 4.18121L29.8244 4.18154L30.5325 3.4754ZM24.5774 1V2V1ZM18.6223 3.4754L19.3306 4.18138L19.3307 4.18121L18.6223 3.4754ZM16.9996 5.10333L16.2914 5.8093L16.9996 6.51981L17.7078 5.8093L16.9996 5.10333ZM15.3769 3.4754L14.6686 4.18138V4.18138L15.3769 3.4754ZM3.46668 15.4237L4.17492 14.7178H4.17492L3.46668 15.4237ZM5.0894 17.0517L4.38117 17.7576L4.38117 17.7576L5.0894 17.0517ZM16.9996 29L16.2914 29.706L16.9996 30.4165L17.7078 29.706L16.9996 29ZM28.9098 17.0517L29.618 17.7576V17.7576L28.9098 17.0517ZM30.5325 15.4237L29.8244 14.7176L29.8243 14.7178L30.5325 15.4237ZM31.2409 2.76959C30.3663 1.89176 29.3277 1.19523 28.1843 0.719951L27.4166 2.56675C28.3168 2.94095 29.1349 3.4895 29.8241 4.18121L31.2409 2.76959ZM28.1843 0.719951C27.0409 0.24467 25.8153 0 24.5774 0V2C25.5516 2 26.5164 2.19256 27.4166 2.56675L28.1843 0.719951ZM24.5774 0C23.3396 0 22.1139 0.244669 20.9705 0.719951L21.7382 2.56675C22.6384 2.19256 23.6032 2 24.5774 2V0ZM20.9705 0.719951C19.8272 1.19523 18.7885 1.89176 17.9139 2.76959L19.3307 4.18121C20.0199 3.4895 20.838 2.94095 21.7382 2.56675L20.9705 0.719951ZM17.9141 2.76943L16.2914 4.39735L17.7078 5.8093L19.3306 4.18138L17.9141 2.76943ZM17.7078 4.39735L16.0851 2.76943L14.6686 4.18138L16.2914 5.8093L17.7078 4.39735ZM16.0851 2.76943C14.3184 0.997092 11.9216 0.000821292 9.42177 0.000821292V2.00082C11.3891 2.00082 13.2765 2.78482 14.6686 4.18138L16.0851 2.76943ZM9.42177 0.000821292C6.92193 0.000821292 4.52512 0.997092 2.75844 2.76943L4.17492 4.18138C5.56702 2.78482 7.45443 2.00082 9.42177 2.00082V0.000821292ZM2.75844 2.76943C0.991874 4.54166 0 6.94464 0 9.44957H2C2 7.47301 2.78271 5.57805 4.17492 4.18138L2.75844 2.76943ZM0 9.44957C0 11.9545 0.991874 14.3575 2.75844 16.1297L4.17492 14.7178C2.78271 13.3211 2 11.4261 2 9.44957H0ZM2.75844 16.1297L4.38117 17.7576L5.79764 16.3457L4.17492 14.7178L2.75844 16.1297ZM4.38117 17.7576L16.2914 29.706L17.7078 28.294L5.79764 16.3457L4.38117 17.7576ZM17.7078 29.706L29.618 17.7576L28.2015 16.3457L16.2914 28.294L17.7078 29.706ZM29.618 17.7576L31.2407 16.1297L29.8243 14.7178L28.2015 16.3457L29.618 17.7576ZM31.2406 16.1299C32.1156 15.2525 32.8096 14.2109 33.283 13.0647L31.4344 12.3012C31.0611 13.2051 30.5139 14.0262 29.8244 14.7176L31.2406 16.1299ZM33.283 13.0647C33.7564 11.9185 34 10.6901 34 9.44957H32C32 10.4282 31.8078 11.3972 31.4344 12.3012L33.283 13.0647ZM34 9.44957C34 8.20907 33.7564 6.98066 33.283 5.83447L31.4344 6.59797C31.8078 7.50191 32 8.47091 32 9.44957H34ZM33.283 5.83447C32.8096 4.68828 32.1156 3.64668 31.2406 2.76926L29.8244 4.18154C30.5139 4.87294 31.0611 5.69402 31.4344 6.59797L33.283 5.83447Z"
+                        fill="currentColor" />
+                    </svg>
+                  </button>
+                </div>
+                <span class="modal-card__line"></span>
+                <div class="modal-card__bottom">
+                  <span class="modal-card__price">150 000
+                    <span class="modal-card__price-currency">₽</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="modal__item">
+            <div class="modal-card modal-card--darrell">
+              <a class="modal-card__link" href="#"></a>
+              <img class="modal-card__img" src="images/modal-card/img-lamp-darrell.png" alt="Лампа настольная"
+                width="184" height="260">
+              <div class="modal-card__wrapper">
+                <div class="modal-card__top">
+                  <div class="modal-card__main-info">
+                    <span class="modal-card__color"></span>
+                    <span class="modal-card__name">coppelia</span>
+                    <span class="modal-card__category">Лампа настольная</span>
+                  </div>
+                  <button class="modal-card__btn-like btn btn--alt" type="button">
+                    <svg class="btn__icon" width="34" height="31" viewBox="0 0 34 31" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path class="btn__icon-fill"
+                        d="M30.5325 3.4754C29.7506 2.69063 28.8222 2.06809 27.8004 1.64335C26.7786 1.21861 25.6834 1 24.5774 1C23.4714 1 22.3762 1.21861 21.3544 1.64335C20.3326 2.06809 19.4042 2.69063 18.6223 3.4754L16.9996 5.10333L15.3769 3.4754C13.7975 1.89096 11.6554 1.00082 9.42177 1.00082C7.18818 1.00082 5.04607 1.89096 3.46668 3.4754C1.88729 5.05985 1 7.20882 1 9.44957C1 11.6903 1.88729 13.8393 3.46668 15.4237L5.0894 17.0517L16.9996 29L28.9098 17.0517L30.5325 15.4237C31.3148 14.6393 31.9353 13.708 32.3587 12.6829C32.7821 11.6579 33 10.5591 33 9.44957C33 8.33999 32.7821 7.24129 32.3587 6.21622C31.9353 5.19115 31.3148 4.25981 30.5325 3.4754Z"
+                        fill="currentColor" />
+                      <path class="btn__icon-stroke"
+                        d="M30.5325 3.4754L29.8241 4.18121L29.8244 4.18154L30.5325 3.4754ZM24.5774 1V2V1ZM18.6223 3.4754L19.3306 4.18138L19.3307 4.18121L18.6223 3.4754ZM16.9996 5.10333L16.2914 5.8093L16.9996 6.51981L17.7078 5.8093L16.9996 5.10333ZM15.3769 3.4754L14.6686 4.18138V4.18138L15.3769 3.4754ZM3.46668 15.4237L4.17492 14.7178H4.17492L3.46668 15.4237ZM5.0894 17.0517L4.38117 17.7576L4.38117 17.7576L5.0894 17.0517ZM16.9996 29L16.2914 29.706L16.9996 30.4165L17.7078 29.706L16.9996 29ZM28.9098 17.0517L29.618 17.7576V17.7576L28.9098 17.0517ZM30.5325 15.4237L29.8244 14.7176L29.8243 14.7178L30.5325 15.4237ZM31.2409 2.76959C30.3663 1.89176 29.3277 1.19523 28.1843 0.719951L27.4166 2.56675C28.3168 2.94095 29.1349 3.4895 29.8241 4.18121L31.2409 2.76959ZM28.1843 0.719951C27.0409 0.24467 25.8153 0 24.5774 0V2C25.5516 2 26.5164 2.19256 27.4166 2.56675L28.1843 0.719951ZM24.5774 0C23.3396 0 22.1139 0.244669 20.9705 0.719951L21.7382 2.56675C22.6384 2.19256 23.6032 2 24.5774 2V0ZM20.9705 0.719951C19.8272 1.19523 18.7885 1.89176 17.9139 2.76959L19.3307 4.18121C20.0199 3.4895 20.838 2.94095 21.7382 2.56675L20.9705 0.719951ZM17.9141 2.76943L16.2914 4.39735L17.7078 5.8093L19.3306 4.18138L17.9141 2.76943ZM17.7078 4.39735L16.0851 2.76943L14.6686 4.18138L16.2914 5.8093L17.7078 4.39735ZM16.0851 2.76943C14.3184 0.997092 11.9216 0.000821292 9.42177 0.000821292V2.00082C11.3891 2.00082 13.2765 2.78482 14.6686 4.18138L16.0851 2.76943ZM9.42177 0.000821292C6.92193 0.000821292 4.52512 0.997092 2.75844 2.76943L4.17492 4.18138C5.56702 2.78482 7.45443 2.00082 9.42177 2.00082V0.000821292ZM2.75844 2.76943C0.991874 4.54166 0 6.94464 0 9.44957H2C2 7.47301 2.78271 5.57805 4.17492 4.18138L2.75844 2.76943ZM0 9.44957C0 11.9545 0.991874 14.3575 2.75844 16.1297L4.17492 14.7178C2.78271 13.3211 2 11.4261 2 9.44957H0ZM2.75844 16.1297L4.38117 17.7576L5.79764 16.3457L4.17492 14.7178L2.75844 16.1297ZM4.38117 17.7576L16.2914 29.706L17.7078 28.294L5.79764 16.3457L4.38117 17.7576ZM17.7078 29.706L29.618 17.7576L28.2015 16.3457L16.2914 28.294L17.7078 29.706ZM29.618 17.7576L31.2407 16.1297L29.8243 14.7178L28.2015 16.3457L29.618 17.7576ZM31.2406 16.1299C32.1156 15.2525 32.8096 14.2109 33.283 13.0647L31.4344 12.3012C31.0611 13.2051 30.5139 14.0262 29.8244 14.7176L31.2406 16.1299ZM33.283 13.0647C33.7564 11.9185 34 10.6901 34 9.44957H32C32 10.4282 31.8078 11.3972 31.4344 12.3012L33.283 13.0647ZM34 9.44957C34 8.20907 33.7564 6.98066 33.283 5.83447L31.4344 6.59797C31.8078 7.50191 32 8.47091 32 9.44957H34ZM33.283 5.83447C32.8096 4.68828 32.1156 3.64668 31.2406 2.76926L29.8244 4.18154C30.5139 4.87294 31.0611 5.69402 31.4344 6.59797L33.283 5.83447Z"
+                        fill="currentColor" />
+                    </svg>
+                  </button>
+                </div>
+                <span class="modal-card__line"></span>
+                <div class="modal-card__bottom">
+                  <span class="modal-card__price">150 000
+                    <span class="modal-card__price-currency">₽</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="modal__user" id="user-modal">
+        <button class="modal__btn-close" type="button">
+          <svg class="modal__btn-close-icon" width="20" height="20" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="modal__user-wrapper">
+          <div class="modal__user-login modal__user-login--active">
+            <span class="modal__title">Вход</span>
+            <form class="user-form" action="#" method="POST">
+              <div class="user-form__inner">
+                <div class="custom-input">
+                  <input class="custom-input__field" type="email" name="user-mail" id="user-mail" placeholder="">
+                  <label class="custom-input__label" for="user-mail">E-mail</label>
+                </div>
+                <div class="custom-input">
+                  <input class="custom-input__field" type="password" name="user-password" id="user-password"
+                    placeholder="">
+                  <label class="custom-input__label" for="user-password">ПАРОЛЬ</label>
+                </div>
+              </div>
+              <button class="user-form__btn btn" type="submit">Войти</button>
+            </form>
+            <div class="modal__footer">
+              <button class="modal__btn-login" type="button">нет аккаунта?</button>
+              <button class="modal__btn-login" type="button" id="btn-reg">Регистрация
+                <svg class="modal__btn-login-icon" width="42" height="16" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-arrow-right"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="modal__user-registration">
+            <span class="modal__title">Регистрация</span>
+            <form class="user-form" action="#" method="POST">
+              <div class="user-form__inner">
+                <div class="custom-input">
+                  <input class="custom-input__field" type="email" name="new-user-mail" id="new-user-mail"
+                    placeholder="">
+                  <label class="custom-input__label" for="new-user-mail">E-mail</label>
+                </div>
+                <div class="custom-input">
+                  <input class="custom-input__field" type="password" name="new-user-password" id="new-user-password"
+                    placeholder="">
+                  <label class="custom-input__label" for="new-user-password">пароль</label>
+                </div>
+                <div class="custom-input">
+                  <input class="custom-input__field" type="password" name="repeat-user-password"
+                    id="repeat-user-password" placeholder="">
+                  <label class="custom-input__label" for="repeat-user-password">Повторите пароль</label>
+                </div>
+              </div>
+              <button class="user-form__btn user-form__btn--secondary btn" type="submit">Регистрация</button>
+            </form>
+            <div class="modal__footer">
+              <button class="modal__btn-login" type="button" id="btn-login">
+                <svg class="modal__btn-login-icon modal__btn-login-icon--reverse" width="42" height="16"
+                  aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-arrow-right"></use>
+                </svg>
+                Вход
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="modal__search" id="search-modal"></div> -->
+    </div>
+  </main>
+  <footer class="footer">
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
