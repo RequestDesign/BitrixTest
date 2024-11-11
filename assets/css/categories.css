@@ -1,0 +1,269 @@
+.categories {
+	margin-top: 10rem;
+	text-align: center;
+	padding: 0;
+}
+
+.categories__title {
+	font-weight: 500;
+	font-size: 3.75rem;
+	text-transform: uppercase;
+	line-height: 1;
+}
+
+.categories__list {
+	display: flex;
+	justify-content: space-between;
+	max-width: 93.75vw;
+	/* margin-top: 4rem; */
+	margin: 4rem auto 0 auto;
+}
+
+.categories__item {
+	position: relative;
+	width: 26.75rem;
+	height: 56.5vh;
+	overflow: hidden;
+}
+
+.categories__content {
+	position: relative;
+	background-image: url("../images/ui/Subtract.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 24.25rem;
+	height: 31.25rem;
+	/* border-radius: 50%; */
+	z-index: 2;
+	cursor: pointer;
+}
+
+.categories__image {
+	position: absolute;
+	top: 44%;
+	left: 46%;
+	transform: translate(-44%, -46%);
+}
+
+.categories__name {
+	position: absolute;
+	max-width: 181px;
+	top: 40px;
+	left: 0px;
+	font-weight: 500;
+	font-size: 1.75rem;
+	text-transform: uppercase;
+	text-align: left;
+	line-height: 1.2;
+}
+
+.categories__inscription {
+	position: absolute;
+	background-image: url("../images/ui/inscription.svg");
+	bottom: 76px;
+	left: 15px;
+	width: 89px;
+	height: 196px;
+}
+
+.categories__badge {
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	left: 80%;
+	top: 149px;
+	width: 81px;
+	height: 75px;
+	background-image: url("../images/ui/plashka.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	transform: rotate(-23deg);
+}
+
+.categories__badge-wrapper {
+	padding-top: 9px;
+}
+.categories__badge-number {
+	line-height: 1;
+	font-family: var(--font-secondary);
+	font-weight: 400;
+	font-size: 2.5rem;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+
+.categories__badge-text {
+	line-height: 1;
+	font-weight: 500;
+	font-size: 0.9375rem;
+	text-transform: uppercase;
+}
+
+.categories__button {
+	position: absolute;
+	top: 84%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 101px;
+	height: 101px;
+	border-radius: 100%;
+	border: 2px solid var(--color-lime);
+	background-image: url("../icons/arrow-lime.svg");
+	background-repeat: no-repeat;
+	background-color: rgba(235, 227, 255, 0.19);
+	background-position: center;
+	cursor: pointer;
+}
+
+@media (max-width: 1800px) {
+	.categories__list {
+		max-width: 85vw;
+	}
+
+	.categories__item {
+		width: 19.5rem;
+		height: 24rem;
+	}
+
+	.categories__content {
+		background-image: url("../images/ui/Subtract-mobile.svg");
+		width: 17rem;
+		height: 22rem;
+	}
+
+	.categories__name {
+		font-size: 1.3rem;
+	}
+
+	.categories__image {
+		height: 10rem;
+	}
+
+	.categories__button {
+		width: 80px;
+		height: 80px;
+	}
+
+	.categories__inscription {
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		bottom: 37px;
+		left: 11px;
+		width: 80px;
+		transform: rotate(5deg);
+	}
+
+	.categories__badge {
+		right: 2%;
+		left: auto;
+		top: 26%;
+		width: 64.4px;
+		height: 56px;
+		border-radius: 50%;
+	}
+
+	.categories__badge-number {
+		font-size: 2.2rem;
+	}
+
+	.categories__badge-text {
+		font-size: 0.8rem;
+	}
+}
+
+@media (max-width: 1560px) {
+	.categories__item {
+		width: 15rem;
+	}
+
+	.categories__content {
+		width: 13.5rem;
+		height: 17.375rem;
+	}
+
+	.categories__name {
+		top: 25px;
+		font-size: 0.9375rem;
+		max-width: 9.375rem;
+	}
+
+	.categories__image {
+		height: 8.625rem;
+	}
+
+	.categories__badge {
+		width: 2.875rem;
+		height: 2.625rem;
+		top: 22%;
+	}
+
+	.categories__badge-number {
+		font-size: 1.5625rem;
+	}
+
+	.categories__badge-text {
+		font-size: 0.625rem;
+	}
+
+	.categories__inscription {
+		width: 4rem;
+		bottom: 10px;
+		left: 7px;
+	}
+
+	.categories__button {
+		width: 3.5rem;
+		height: 3.5rem;
+		background-size: 30%;
+	}
+}
+
+@media (max-width: 1280px) {
+	.categories__title {
+		font-size: clamp(1.438rem, 4vw, 3.5rem);
+		text-align: left;
+		margin-left: 1rem;
+	}
+
+	.categories__list {
+		display: flex;
+		overflow-x: auto;
+		scroll-snap-type: x mandatory;
+		-webkit-overflow-scrolling: touch;
+		margin: 4rem auto 0 auto;
+		gap: 1rem;
+		scroll-behavior: smooth;
+		user-select: none;
+	}
+
+	.categories__item {
+		flex: 0 0 auto;
+		scroll-snap-align: center;
+		height: 18.5rem;
+	}
+
+	.categories__list::-webkit-scrollbar {
+		display: none;
+	}
+
+	.categories__badge {
+		top: 28%;
+	}
+}
+
+@media (max-width: 1180px) {
+	.categories {
+		margin: 6rem 0 0 0;
+		max-width: 100vw;
+	}
+
+	.categories__list {
+		margin-top: 2.2rem;
+
+		max-width: 100vw;
+		padding: 0 1rem;
+	}
+}

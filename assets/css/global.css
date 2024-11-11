@@ -1,0 +1,112 @@
+:root {
+	/* COLOR */
+	--color-pink: #fa8fef;
+	--color-blue: #aecfff;
+	--color-lavender: #ae97e8;
+	--color-lime: #d9ff5a;
+	--color-white: #fff;
+	--color-delete: #7964ae;
+	--color-black: #000;
+
+	/* FONTS */
+	--font-primary: "Euclid Circular A", sans-serif;
+	--font-secondary: "Floreste Wavy", sans-serif;
+	--font-footer: "Gilroy Medium", sans-serif;
+	--font-logo: "Le Murmure", sans-serif;
+}
+
+/* GLOBAL */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body,
+html {
+	height: 100%;
+	font-family: var(--font-primary);
+	background-color: var(--color-lavender);
+	color: var(--color-white);
+	overflow-x: hidden;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+	display: block;
+}
+
+img {
+	/* max-width: 100%; */
+	height: auto;
+	display: block;
+}
+
+ul,
+ol {
+	list-style: none;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+li {
+	line-height: 1;
+}
+
+button,
+input,
+textarea,
+label {
+	line-height: 1;
+}
+
+.page {
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.section-container {
+	width: 100%;
+	/* max-width: 1860px; */
+	max-width: 93.75vw;
+	padding: 0 1.25rem;
+	margin: 0 auto;
+}
+
+.price {
+	font-family: var(--font-secondary);
+	font-weight: 400;
+	font-size: 1.75rem;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	line-height: 1;
+	display: flex;
+	align-items: start;
+}
+
+.currency {
+	font-weight: 400;
+	font-size: 1.25rem;
+	text-transform: uppercase;
+	vertical-align: top;
+	font-family: var(--font-primary);
+	line-height: 0.87;
+}
