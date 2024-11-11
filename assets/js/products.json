@@ -1,0 +1,160 @@
+{
+  "mirrors": [
+    {
+      "name": "KRISTIN",
+      "price": "150 000",
+      "color_indicator": "#A5D4FF",
+      "image": "./assets/images/products/kristin-mirror.png"
+    },
+    {
+      "name": "ARLENE",
+      "price": "150 000",
+      "color_indicator": "#F0B3EA",
+      "image": "./assets/images/products/arlene-mirror.png"
+    },
+    {
+      "name": "COLLEEN",
+      "price": "150 000",
+      "color_indicator": "#8ECDFA",
+      "image": "./assets/images/products/colleen-mirror.png"
+    },
+    {
+      "name": "COPPELIA",
+      "price": "150 000",
+      "color_indicator": "#FBE4CA",
+      "image": "./assets/images/products/coppelia-mirror.png"
+    },
+    {
+      "name": "TEST ARTEMIDE",
+      "price": "150 000",
+      "color_indicator": "#F0B5FA",
+      "image": "./assets/images/products/artemide-mirror.png"
+    },
+    {
+      "name": "TEST KRISTIN",
+      "price": "150 000",
+      "color_indicator": "#A5D4FF",
+      "image": "./assets/images/products/kristin-mirror.png"
+    },
+    {
+      "name": "TEST ARLENE",
+      "price": "150 000",
+      "color_indicator": "#F0B3EA",
+      "image": "./assets/images/products/arlene-mirror.png"
+    },
+    {
+      "name": "TEST COLLEEN",
+      "price": "150 000",
+      "color_indicator": "#8ECDFA",
+      "image": "./assets/images/products/colleen-mirror.png"
+    },
+    {
+      "name": "TEST COPPELIA",
+      "price": "150 000",
+      "color_indicator": "#FBE4CA",
+      "image": "./assets/images/products/coppelia-mirror.png"
+    },
+    {
+      "name": "TEST ARTEMIDE",
+      "price": "150 000",
+      "color_indicator": "#F0B5FA",
+      "image": "./assets/images/products/artemide-mirror.png"
+    }
+  ],
+  "lamps": [
+    {
+      "name": "Aubrey",
+      "price": "150 000",
+      "color_indicator": "#FFC4A5",
+      "image": "./assets/images/products/aubrey-lamp.png"
+    },
+    {
+      "name": "Leslie",
+      "price": "150 000",
+      "color_indicator": "#88E379",
+      "image": "./assets/images/products/leslie-lamp.png"
+    },
+    {
+      "name": "Darrell",
+      "price": "150 000",
+      "color_indicator": "#FA8EEF",
+      "image": "./assets/images/products/darrell-lamp.png"
+    },
+    {
+      "name": "coppelia",
+      "price": "150 000",
+      "color_indicator": "#29D0D9",
+      "image": "./assets/images/products/coppelia-lamp.png"
+    },
+    {
+      "name": "artemide",
+      "price": "150 000",
+      "color_indicator": "#89D5FF",
+      "image": "./assets/images/products/artemide-lamp.png"
+    }
+  ],
+  "chairs": [
+    {
+      "name": "Kathryn",
+      "price": "150 000",
+      "color_indicator": "#FBE4CA",
+      "image": "./assets/images/products/kathryn-chair.png"
+    },
+    {
+      "name": "Wendy",
+      "price": "150 000",
+      "color_indicator": "#F0B3EA",
+      "image": "./assets/images/products/wendy-chair.png"
+    },
+    {
+      "name": "Judith",
+      "price": "150 000",
+      "color_indicator": "#F18EFA",
+      "image": "./assets/images/products/judith-chair.png"
+    },
+    {
+      "name": "Jane",
+      "price": "150 000",
+      "color_indicator": "#5C544A",
+      "image": "./assets/images/products/jane-chair.png"
+    },
+    {
+      "name": "Darlene",
+      "price": "150 000",
+      "color_indicator": "#F0B5FA",
+      "image": "./assets/images/products/darlene-chair.png"
+    }
+  ],
+  "tables": [
+    {
+      "name": "Kathryn",
+      "price": "150 000",
+      "color_indicator": "#A5D4FF",
+      "image": "./assets/images/products/kathryn-table.png"
+    },
+    {
+      "name": "Wendy",
+      "price": "150 000",
+      "color_indicator": "#F0DFB3",
+      "image": "./assets/images/products/wendy-table.png"
+    },
+    {
+      "name": "Judith",
+      "price": "150 000",
+      "color_indicator": "#F88EFA",
+      "image": "./assets/images/products/judith-table.png"
+    },
+    {
+      "name": "Jane",
+      "price": "150 000",
+      "color_indicator": "#CACFFB",
+      "image": "./assets/images/products/jane-table.png"
+    },
+    {
+      "name": "Darlene",
+      "price": "150 000",
+      "color_indicator": "#F0B5FA",
+      "image": "./assets/images/products/darlene-table.png"
+    }
+  ]
+}
